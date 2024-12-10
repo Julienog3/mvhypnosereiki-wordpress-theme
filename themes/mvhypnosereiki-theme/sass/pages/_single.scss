@@ -1,0 +1,25 @@
+@import "./../variables";
+
+.post {
+  margin-top: 1.5rem;
+  font-family: Junge;
+
+  h2 {
+    font-size: 1.5rem;
+    color: $primary;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    line-height: 1.5;
+    color: $secondary;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: $secondary;
+    list-style: inside;
+  }
+}

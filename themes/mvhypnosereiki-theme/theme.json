@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Junge\", serif",
+					"name": "Junge",
+					"slug": "junge",
+					"fontFace": [
+						{
+							"fontFamily": "Junge",
+							"fontWeight": "400 500 700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./fonts/Junge-Regular.ttf" ]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/heading": {
+				"color": {
+					"text": "#C47A5F"
+				},
+				"typography": {
+					"fontFamily": "Junge",
+					"fontSize": "32px"
+				},
+				"css": "margin-bottom: .5rem;"
+			},
+			// "core/paragraph": {
+			// 	"typography": {
+			// 		"fontFamily": "Junge"
+			// 	},
+			// 	"color": {
+			// 		"text": "#533930"
+			// 	},
+			// 	"css": "line-height: 1.5; margin-bottom: 1.5rem"
+			// },
+			"core/list": {
+				"typography": {
+					"fontFamily": "Junge"
+				},
+				"color": {
+					"text": "#533930"
+				},
+				"css": "line-height: 1.5; margin-bottom: 1.5rem; list-style: inside;"
+			}
+		},
+		"typography": {
+			"fontFamily": "Junge"
+		},
+    "color": {
+      "text": "#000",
+      "background": "#FEFAF7"
+    },
+		"elements": {}
+  },
+	"customTemplates": {},
+	"templateParts": {},
+	"patterns": []
+}

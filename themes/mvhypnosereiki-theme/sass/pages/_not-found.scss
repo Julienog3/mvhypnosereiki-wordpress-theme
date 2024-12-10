@@ -1,0 +1,33 @@
+@import "./../variables";
+@import "./../elements/buttons";
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $background;
+  font-family: Junge;
+
+  &__title {
+    font-size: min(8vw, 5rem);
+    margin-bottom: .5rem;
+    color: $secondary;
+
+    @media (max-width: $xl) {
+      text-align: center;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.5;
+    margin-bottom: 1.5rem;
+    color: $secondary;
+
+    @media (max-width: $xl) {
+      text-align: center;
+    }
+  }
+}

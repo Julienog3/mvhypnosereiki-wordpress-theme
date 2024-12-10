@@ -1,0 +1,12 @@
+@import "./variables";
+
+.container {
+  max-width: 1024px;
+  width: auto;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+  @media (max-width: $xl) {
+    padding: 0 1rem;
+  }
+}

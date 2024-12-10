@@ -1,0 +1,139 @@
+@import "./../variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6.5rem;
+  z-index: 999;
+  font-family: Junge;
+  color: $secondary;
+  
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: transparent;
+    mask: linear-gradient(to top, transparent, black 35%);
+    backdrop-filter: blur(10px);
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 2rem;
+
+    @media (max-width: $xl) {
+      justify-content: space-between;
+    }
+  }
+
+  .title {
+    text-transform: uppercase;
+
+    a {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+
+  .nav {
+    display: flex;
+    margin: 0 auto;
+
+    &-btn {
+      background-color: transparent;
+      border: none;
+      display: none;
+      cursor: pointer;
+  
+      @media (max-width: $xl) {
+        display: block;
+      }
+    }
+
+    @media (max-width: $xl) {
+      display: none;
+    }
+
+    &-list {
+      display: flex;
+      gap: 1rem;
+
+      &__item {
+        a {
+          text-decoration: none;
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .phonenumber {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: $primary;
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+
+    @media (max-width: $xl) {
+      display: none;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  transform: translateX(-100%);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $primary;
+  z-index: 999;
+  font-family: Junge;
+  transition: all .5s ease-in-out;
+
+  &--open {
+    transform: translateX(0%);
+  }
+
+  &-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-1rem, 1rem);
+
+    img {
+      width: 2rem;
+    }
+  }
+
+  .nav {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &__item {
+        font-size: 2rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
