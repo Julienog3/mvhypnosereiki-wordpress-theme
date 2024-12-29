@@ -405,7 +405,7 @@ body {
   }
 }
 .hero__title {
-  font-size: min(8vw, 3rem);
+  font-size: min(8vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 @media (max-width: 1280px) {
@@ -651,7 +651,7 @@ body {
 }
 
 .pricing {
-  padding: 10rem 0;
+  padding: 6rem 0;
   background-color: #FEF4EA;
   color: #533930;
   font-family: Junge;
@@ -779,7 +779,7 @@ body {
 .news {
   background-color: #FEF4EA;
   color: #533930;
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .news-container {
   display: flex;
@@ -860,6 +860,13 @@ body {
 .post h2 {
   font-size: 1.5rem;
   color: #C47A5F;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.post h3 {
+  font-size: 1.25rem;
+  color: #533930;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 .post p {
@@ -872,6 +879,9 @@ body {
   margin-bottom: 1rem;
   color: #533930;
   list-style: inside;
+}
+.post a {
+  color: #C47A5F;
 }
 
 .page-hero {

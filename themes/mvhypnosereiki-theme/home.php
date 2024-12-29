@@ -7,7 +7,7 @@ get_header();
     <div class="column">
       <h1 class="hero__title">MVHypnose.reiki</h1>
       <p class="hero__description">Bienvenue ! Je suis Maxime Vannier, praticien spécialisé en hypnose holistique, Reiki et D.T.M.A à Condé-en-Normandie. Dans un cadre apaisant et confidentiel, je vous accompagne en fonction de vos besoins, et à votre rythme. Je vous aide à retrouver confiance en vous et à atteindre vos objectifs en vous guidant pour activer vos ressources personnelles.</p>
-      <a class="btn" href="#about">
+      <a class="btn" href="#a-propos">
         <span>En savoir plus</span>
       </a>
     </div>
@@ -150,6 +150,11 @@ get_header();
       </ul>
     </div>
     <img class="illustration" src="<?= esc_url(get_parent_theme_file_uri() . '/images/news.jpg'); ?>" alt="" />
+  </div>
+</section>
+<?= do_shortcode('[trustindex no-registration=google]') ?>
+<section id="reviews">
+  <div class="container">
   </div>
 </section>
 
