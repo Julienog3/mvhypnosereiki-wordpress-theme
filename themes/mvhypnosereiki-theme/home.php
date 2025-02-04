@@ -111,7 +111,7 @@ get_header();
     </ul>
   </div>
 </section>
-<section id="actualites" class="news">
+<!-- <section id="actualites" class="news">
   <div class="news-container container">
     <div class="column">
       <h2 class="news__title">Actualités</h2>
@@ -151,10 +151,12 @@ get_header();
     </div>
     <img class="illustration" src="<?= esc_url(get_parent_theme_file_uri() . '/images/news.jpg'); ?>" alt="" />
   </div>
-</section>
-<?= do_shortcode('[trustindex no-registration=google]') ?>
-<section id="reviews">
-  <div class="container">
+</section> -->
+
+<section class="reviews" id="reviews">
+  <div class="reviews-container container">
+    <h2 class="reviews__title">Les avis</h2>
+    <?= do_shortcode('[trustindex data-widget-id=3a9d4524097391571536ba54c88]') ?>
   </div>
 </section>
 

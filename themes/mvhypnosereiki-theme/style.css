@@ -853,6 +853,36 @@ body {
   }
 }
 
+.reviews {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  color: #533930;
+  font-family: Junge;
+}
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .reviews-container {
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.reviews__title {
+  font-size: min(8vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1280px) {
+  .reviews__title {
+    text-align: center;
+  }
+}
+
 .post {
   margin-top: 1.5rem;
   font-family: Junge;

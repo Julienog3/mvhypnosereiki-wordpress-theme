@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
+  <script defer async src='https://cdn.trustindex.io/loader.js?3a9d4524097391571536ba54c88'></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -54,7 +55,7 @@
           <a href="#pricing">Tarifs</a>
         </li>
         <li class="nav-list__item">
-          <a href="#news">Actualités</a>
+          <a href="#reviews">Avis</a>
         </li>
       </ul>
     </nav>
