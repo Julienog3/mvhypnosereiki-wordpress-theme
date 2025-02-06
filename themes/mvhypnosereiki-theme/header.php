@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <?php wp_head(); ?>
   <script defer async src='https://cdn.trustindex.io/loader.js?3a9d4524097391571536ba54c88'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -28,7 +30,7 @@
             <a href="<?= get_site_url() ?>/#tarifs">Tarifs</a>
           </li>
           <li class="nav-list__item">
-            <a href="<?= get_site_url() ?>/#actualites">Actualités</a>
+            <a href="<?= get_site_url() ?>/#avis">Avis</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +57,7 @@
           <a href="#pricing">Tarifs</a>
         </li>
         <li class="nav-list__item">
-          <a href="#reviews">Avis</a>
+          <a href="#avis">Avis</a>
         </li>
       </ul>
     </nav>

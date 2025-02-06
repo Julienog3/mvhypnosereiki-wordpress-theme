@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+  AOS.init();
   console.log("La page est complètement chargée");
 });
 
