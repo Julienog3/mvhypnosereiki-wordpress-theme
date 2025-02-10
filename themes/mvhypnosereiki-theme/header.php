@@ -8,7 +8,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <?php wp_head(); ?>
   <script defer async src='https://cdn.trustindex.io/loader.js?3a9d4524097391571536ba54c88'></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 </head>
 
 <body <?php body_class(); ?>>
