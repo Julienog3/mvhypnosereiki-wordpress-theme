@@ -12,7 +12,7 @@ get_header();
       </a>
     </div>
     <div class="picture">
-      <img src="<?= esc_url(get_parent_theme_file_uri() . '/images/hero.jpg'); ?>" alt="" />
+      <img src="<?= esc_url(get_parent_theme_file_uri() . '/images/hero.webp'); ?>" alt="" />
     </div>
   </div>
 </section>
@@ -29,7 +29,7 @@ get_header();
         Mon objectif est de vous accompagner sur le chemin du mieux-être, en vous offrant des outils et des techniques adaptés à vos besoins et vos souhaits. Chaque accompagnement est personnalisé . Que vous cherchiez à surmonter des blocages émotionnels, à soulager des douleurs physiques ou simplement à retrouver un état de sérénité et d'équilibre, je suis là pour vous aider.
       </p>
     </div>
-    <img class="picture" src="<?= esc_url(get_parent_theme_file_uri() . '/images/profile.jpg'); ?>" alt="" />
+    <img class="picture" src="<?= esc_url(get_parent_theme_file_uri() . '/images/profile.webp'); ?>" alt="" />
   </div>
 </section>
 
@@ -149,7 +149,7 @@ get_header();
         ?>
       </ul>
     </div>
-    <img class="illustration" src="<?= esc_url(get_parent_theme_file_uri() . '/images/news.jpg'); ?>" alt="" />
+    <img class="illustration" src="<?= esc_url(get_parent_theme_file_uri() . '/images/news.webp'); ?>" alt="" />
   </div>
 </section> -->
 
