@@ -157,7 +157,7 @@ get_header();
   <div data-aos="fade-up" class="reviews-container container">
     <h2 class="reviews__title">Les avis</h2>
     <p class="reviews__description">Découvrez les expériences et ressentis de ceux qui ont bénéficié des séances.</p>
-    <?= do_shortcode('[trustindex data-widget-id=3a9d4524097391571536ba54c88]') ?>
+    <?= do_shortcode('[trustindex no-registration=google]') ?>
   </div>
 </section>
 
