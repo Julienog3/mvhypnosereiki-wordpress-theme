@@ -2,6 +2,8 @@
 get_header();
 ?>
 
+
+
 <section class="hero">
   <div class="hero-container container">
     <div class="column">
@@ -17,6 +19,7 @@ get_header();
   </div>
 </section>
 <img class="wave" src="<?= esc_url(get_parent_theme_file_uri() . '/images/wave_1.svg'); ?>" alt="" />
+<img class="wave" src="<?= esc_url(get_parent_theme_file_uri() . '/images/shape_1.svg'); ?>" alt="" />
 
 <section id="a-propos" class="about">
   <div data-aos="fade-up" class="about-container container">

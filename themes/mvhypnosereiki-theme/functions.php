@@ -50,16 +50,33 @@ function register_post_types()
 
 function register_assets()
 {
+   // $script_asset = include get_parent_theme_file_uri('/public/js/app.asset.php'),
+   // $style_asset = include get_parent_theme_file_uri('/public/css/style.css')
+
+   // wp_enqueue_script(
+   //    'mvhypnosereiki-script',
+   //    get_theme_file_uri('public/js/app.js'),
+   //    $script_asset['dependencies'],
+	// 	$script_asset['version'],
+	// 	true
+   // );
+   // wp_enqueue_style(
+   //    'mvhypnosereiki-style',
+   //    get_theme_file_uri('public/css/style.css'),
+   //    $style_asset['dependencies'],
+	// 	$style_asset['version'],
+   // );
+
    wp_enqueue_script(
       'mvhypnosereiki-script',
-      get_parent_theme_file_uri('/js/app.js'),
+      get_parent_theme_file_uri('/public/js/app.js'),
       array(),
       wp_get_theme()->get('Version'),
       array('strategy'  => 'defer')
    );
    wp_enqueue_style(
       'mvhypnosereiki-style',
-      get_stylesheet_uri(),
+      get_parent_theme_file_uri('/public/css/style.css'),
       array(),
       wp_get_theme()->get('Version')
    );

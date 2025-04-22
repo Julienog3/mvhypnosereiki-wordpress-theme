@@ -1,0 +1,19 @@
+/**
+ * Theme Name: MVHypnose Reiki Theme
+ */
+
+
+// Globals
+@use "./fonts";
+@use "./reset";
+@use "./layout";
+
+// Layout parts
+@use "./layouts/header";
+@use "./layouts/footer";
+
+// Pages
+@use "./pages/home";
+@use "./pages/single";
+@use "./pages/page";
+@use "./pages/not-found";
