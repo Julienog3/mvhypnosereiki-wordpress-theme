@@ -12,7 +12,15 @@ get_header();
       </a>
     </div>
     <div class="picture">
-      <img src="<?= esc_url(get_parent_theme_file_uri() . '/images/hero.webp'); ?>" alt="" />
+      <img
+        srcset="<?= esc_url(get_parent_theme_file_uri() . '/images/hero-400w.webp'); ?>, <?= esc_url(get_parent_theme_file_uri() . '/images/hero-600w.webp'); ?> 600w, <?= esc_url(get_parent_theme_file_uri() . '/images/hero-800w.webp'); ?> 800w, <?= esc_url(get_parent_theme_file_uri() . '/images/hero-1000w.webp'); ?> 1000w, <?= esc_url(get_parent_theme_file_uri() . '/images/hero-1200w.webp'); ?> 1200w, <?= esc_url(get_parent_theme_file_uri() . '/images/hero-1600w.webp'); ?> 1600w, <?= esc_url(get_parent_theme_file_uri() . '/images/hero-2000w.webp'); ?> 2000w"
+        sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px"
+        src="<?= esc_url(get_parent_theme_file_uri() . '/images/hero.webp'); ?>"
+        alt="Photo montrant une séance de Reiki"
+        width="2256"
+        height="4032"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>
@@ -29,7 +37,16 @@ get_header();
         Mon objectif est de vous accompagner sur le chemin du mieux-être, en vous offrant des outils et des techniques adaptés à vos besoins et vos souhaits. Chaque accompagnement est personnalisé . Que vous cherchiez à surmonter des blocages émotionnels, à soulager des douleurs physiques ou simplement à retrouver un état de sérénité et d'équilibre, je suis là pour vous aider.
       </p>
     </div>
-    <img class="picture" src="<?= esc_url(get_parent_theme_file_uri() . '/images/profile.webp'); ?>" alt="" />
+    <img
+      class="picture"
+      srcset="<?= esc_url(get_parent_theme_file_uri() . '/images/profile-400w.webp'); ?> 400w, <?= esc_url(get_parent_theme_file_uri() . '/images/profile-600w.webp'); ?> 600w, <?= esc_url(get_parent_theme_file_uri() . '/images/profile-800w.webp'); ?> 800w, <?= esc_url(get_parent_theme_file_uri() . '/images/profile-1000w.webp'); ?> 1000w"
+      sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (min-width: 801px) 1000px"
+      src="<?= esc_url(get_parent_theme_file_uri() . '/images/profile.webp'); ?>profile.webp"
+      alt="Photo de Maxime Vannier"
+      width="1158"
+      height="1364"
+      loading="lazy"
+    />
   </div>
 </section>
 
@@ -52,11 +69,11 @@ get_header();
                 <p class="article__description">
                   <?= get_the_excerpt() ?>
                 </p>
-                <a class="btn" href="<?php the_permalink() ?>">
-                  <span>En savoir plus</span>
+                <a class="btn" href="<?php the_permalink() ?>" aria-label="Naviguer vers la page sur <?php the_title() ?>">
+                  En savoir plus
                 </a>
               </div>
-              <?php the_post_thumbnail('original', array('class' => 'picture')) ?>
+              <?php the_post_thumbnail('large', array('class' => 'picture')) ?>
             </article>
           </li>
       <?php

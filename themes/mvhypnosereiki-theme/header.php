@@ -34,16 +34,16 @@
           </li>
         </ul>
       </nav>
-      <button class="nav-btn" id="menu-btn">
-        <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/menu.svg'); ?>" alt="" />
+      <button class="nav-btn" id="menu-btn" aria-label="Ouvrir le menu">
+        <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/menu.svg'); ?>" alt="Icône de menu" />
       </button>
       <a class="phonenumber" href="tel:+33759777372"><img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/phone-white.svg'); ?>" alt="phone" /> 07 59 77 73 72</a>
     </div>
   </header>
 
   <aside id="menu" class="menu">
-    <button class="menu-btn" id="menu-close-btn">
-      <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/close.svg'); ?>" alt="" />
+    <button class="menu-btn" id="menu-close-btn" aria-label="Fermer le menu">
+      <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/close.svg'); ?>" alt="Icône de fermeture du menu" />
     </button>
     <nav class="nav">
       <ul class="nav-list">

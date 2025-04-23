@@ -25,6 +25,7 @@
         <h2 class="column-subtitle">Où me trouver</h2>
         <iframe
           class="map"
+          title="Carte montrant la localisation du cabinet de Maxime Vannier"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7581629986557!2d-0.5445013225394173!3d48.862821800393355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a2fbb1fe24933%3A0xd7f77041d82ce829!2sMaxime%20Vannier%20%7C%20Praticien%20Hypnose%20et%20Reiki!5e0!3m2!1sfr!2sfr!4v1733406658216!5m2!1sfr!2sfr"
           style="border:0;"
           allowfullscreen=""
@@ -37,13 +38,13 @@
     <div class="more-infos">
       <ul class="socials">
         <li>
-          <a href="https://www.instagram.com/mvhypnose.reiki/" target="_blank">
-            <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/instagram.svg'); ?>" alt="" />
+          <a href="https://www.instagram.com/mvhypnose.reiki/" aria-label="Redirige vers la page Instagram de MVHypnose.reiki" target="_blank">
+            <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/instagram.svg'); ?>" alt="Icône d'instagram" />
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/people/mvhypnosereiki/61559695094082/" target="_blank">
-            <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/facebook.svg'); ?>" alt="" />
+          <a href="https://www.facebook.com/people/mvhypnosereiki/61559695094082/" aria-label="Redirige vers la page Facebook de MVHypnose.reiki" target="_blank">
+            <img src="<?= esc_url(get_parent_theme_file_uri() . '/icons/facebook.svg'); ?>" alt="Icône de facebook" />
           </a>
         </li>
       </ul>
