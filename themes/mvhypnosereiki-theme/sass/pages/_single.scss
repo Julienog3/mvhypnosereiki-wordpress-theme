@@ -2,10 +2,17 @@
 
 .post {
   margin-top: 1.5rem;
-  font-family: Junge;
+  font-family: Jost;
+  padding: 0 2rem ;
+
+  &-hero {
+    height: auto;
+    padding: 4rem 2rem;
+  }
 
   h2 {
     font-size: 1.5rem;
+    font-family: Junge;
     color: $primary;
     margin-top: 2rem;
     margin-bottom: .5rem;
@@ -13,6 +20,7 @@
 
   h3 {
     font-size: 1.25rem;
+    font-family: Junge;
     color: $secondary;
     margin-top: 2rem;
     margin-bottom: .5rem;
@@ -22,6 +30,7 @@
     line-height: 1.5;
     color: $secondary;
     margin-bottom: 1rem;
+    text-align: justify;
   }
 
   ul {

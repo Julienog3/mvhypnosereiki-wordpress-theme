@@ -1,8 +1,18 @@
+@import url("./../variables");
+
 .btn {
   background-color: $primary;
   width: fit-content;
   padding: 1rem 1.5rem;
   border-radius: 999px;
-  color: #fff;
+  color: white;
   text-decoration: none;
+  transition: all .25s ease-in-out;
+  font-family: Jost;
+  // background-color: (in srgb, $primary, black 10%);
+
+  &:hover {
+    background-color: darken($primary, 10%);
+
+  }
 }

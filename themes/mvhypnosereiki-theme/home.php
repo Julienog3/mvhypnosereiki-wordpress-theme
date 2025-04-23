@@ -19,7 +19,7 @@ get_header();
 <img class="wave" src="<?= esc_url(get_parent_theme_file_uri() . '/images/wave_1.svg'); ?>" alt="" />
 
 <section id="a-propos" class="about">
-  <div data-aos="fade-up" class="about-container container">
+  <div class="about-container container">
     <div class="column">
       <h2 class="about__title">A propos de moi</h2>
       <p class="about__description">
@@ -45,7 +45,7 @@ get_header();
       $supports_query = new WP_Query($args);
       ?>
       <?php if ($supports_query->have_posts()) : while ($supports_query->have_posts()) : $supports_query->the_post(); ?>
-          <li data-aos="fade-up" class="support-list__item">
+          <li class="support-list__item">
             <article class="article">
               <div class="column">
                 <h3 class="article__title"><?php the_title() ?></h3>
@@ -70,7 +70,7 @@ get_header();
 <img class="wave-reverse" src="<?= esc_url(get_parent_theme_file_uri() . '/images/wave_1.svg'); ?>" alt="" />
 
 <section id="tarifs" class="pricing">
-  <div data-aos="fade-up" class="pricing-container container">
+  <div class="pricing-container container">
     <h2 class="pricing__title">Mes tarifs</h2>
     <p class="pricing__description">Du lundi au samedi matin<br /> 9h-19h, uniquement sur rendez-vous</p>
     <ul class="pricing-list">
@@ -154,7 +154,7 @@ get_header();
 </section> -->
 
 <section class="reviews" id="avis">
-  <div data-aos="fade-up" class="reviews-container container">
+  <div class="reviews-container container">
     <h2 class="reviews__title">Les avis</h2>
     <p class="reviews__description">Découvrez les expériences et ressentis de ceux qui ont bénéficié des séances.</p>
     <?= do_shortcode('[trustindex no-registration=google]') ?>

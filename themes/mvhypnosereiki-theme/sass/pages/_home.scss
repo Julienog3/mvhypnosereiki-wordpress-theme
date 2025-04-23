@@ -9,55 +9,65 @@ body {
 }
 
 .hero {
-  height: 80vh;
-  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  width: auto;
   background-color: $background;
   color: $secondary;
-  font-family: Junge;
   overflow: hidden;
 
-  @media (max-width: $xl) {
-    height: 100vh;
-      padding: 4rem 0;
+  @media (min-width: $lg) {
+    text-align: left;
+    height: 80vh;
+    padding: 0rem 2rem;
   }
  
   &__title {
+    font-family: Junge;
     font-size: min(8vw, 2.5rem);
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 
-    @media (max-width: $xl) {
-      text-align: center;
+    @media (min-width: $md) {
+      text-align: left;
     }
   }
 
   &__description {
+    font-family: Jost;
     line-height: 1.5;
     max-width: 30rem;
     margin-bottom: 1.5rem;
+    text-align: justify;
 
-    @media (max-width: $xl) {
-      text-align: center;
+    @media (min-width: $lg) {
+      text-align: left;
     }
   }
 
   &-container {
     display: flex;
+    justify-content: center;
     height: 100%;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
     gap: 4rem;
 
-    @media (max-width: $xl) {
-      justify-content: center;
-      flex-direction: column-reverse;
+    @media (min-width: $lg) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    
+    @media (min-width: $xl) {
+      justify-content: space-between;
     }
 
     .column {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
-      @media (max-width: $xl) {
-        align-items: center;
+      @media (min-width: $lg) {
+        align-items: flex-start;
       }
     }
 
@@ -73,6 +83,7 @@ body {
         height: $size;
         object-fit: cover;
         border-radius: 999px 80px;
+        // clip-path: url(#svgPath);
         z-index: 3;
       }
 
@@ -105,15 +116,6 @@ body {
       }
     }
   }
-
-  .btn {
-    background-color: $primary;
-    width: fit-content;
-    padding: 1rem 1.5rem;
-    border-radius: 999px;
-    color: #fff;
-    text-decoration: none;
-  }
 }
 
 .wave {
@@ -130,28 +132,34 @@ body {
 }
 
 .about {
-  height: 80vh;
+  padding: 2rem;
+  height: auto;
   display: flex;
   align-items: center;
   color: $secondary;
-  font-family: Junge;
-  
 
-  @media (max-width: $xl) {
-    height: auto;
-    padding: 5rem 0;
+  @media (min-width: $lg) {
+    height: 80vh;
+    padding: 0rem 2rem;
   }
 
   &-container {
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     gap: 3rem;
     width: 100%;
+    padding: 3rem 0;
 
-    @media (max-width: $xl) {
-      align-items: center;
-      flex-direction: column-reverse;
-      text-align: center;
+    @media (min-width: $lg) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    
+    @media (min-width: $xl) {
+      justify-content: space-between;
     }
   }
 
@@ -166,59 +174,76 @@ body {
   .column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $lg) {
+      align-items: flex-start;
+    }
   }
 
   &__title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-family: Junge;
   }
 
   &__description {
     line-height: 1.5;
     max-width: 35rem;
+    font-family: Jost;
+    text-align: justify;
 
     .strong {
       color: $primary;
+    }
+
+    @media (min-width: $lg) {
+      text-align: left;
     }
   }
 }
 
 .support {
+  padding: 2rem;
+  height: auto;
   color: $secondary;
-  padding: 5rem 0;
   font-family: Junge;
+
+  &-container {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    width: auto;
+    padding: 3rem 0;
+  }
 
   &__title {
     font-size: min(8vw, 2.5rem);
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
 
-    @media (max-width: $xl) {
-      text-align: center;
-      margin-bottom: 3rem;
+    @media (min-width: $xl) {
+      text-align: left;
+      margin-bottom: 1rem;
     }
   }
 
   &-list {
     display: flex;
-    flex-direction: column;
+    width: 100%;
     gap: 5rem;
-
-    @media (max-width: $xl) {
-      align-items: center;
-      flex-direction: column-reverse;
-      text-align: center;
-    }
+    flex-direction: column-reverse;
+    text-align: center;
 
     &__item {
       &:nth-child(even) {
         .article {
-          flex-direction: row-reverse;
-
-          @media (max-width: $xl) {
+          @media (min-width: $lg) {
+            flex-direction: row-reverse;
             align-items: center;
-            flex-direction: column-reverse;
-            gap: 3rem;
             text-align: center;
           }
         }
@@ -226,24 +251,27 @@ body {
 
       .article {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
 
-        @media (max-width: $xl) {
+        @media (min-width: $lg) {
+          width: 100%;
           align-items: center;
-          gap: 3rem;
-          flex-direction: column-reverse;
-          text-align: center;
+          justify-content: space-between;
+          flex-direction: row;
+          gap: 6rem;
         }
 
         .picture {
           max-width: 18rem;
           width: 100%;
           height: max(15vw, 30rem);
-          border-radius: 999px 80px;
+          border-radius: 999px 999px 0 0;
           object-fit: cover;
 
-          @media (max-width: $xl) {
-            border-radius: 999px 999px 0 0;
+          @media (min-width: $lg) {
+            border-radius: 999px 80px;
           }
         }
       
@@ -251,35 +279,31 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
 
-          @media (max-width: $xl) {
-            align-items: center;
+          @media (min-width: $lg) {
+            text-align: left;
+            align-items: flex-start;
           }
         }
       
         &__title {
           color: $primary;
           font-size: 1.5rem;
-          margin-bottom: .5rem;
+          margin-bottom: 1rem;
+          font-family: Junge;
         }
       
         &__description {
           line-height: 1.5;
           max-width: 35rem;
           margin-bottom: 1rem;
+          font-family: Jost;
+          text-align: justify;
       
           .strong {
             color: $primary;
           }
-        }
-
-        .btn {
-          background-color: $primary;
-          width: fit-content;
-          padding: 1rem 1.5rem;
-          border-radius: 999px;
-          color: #fff;
-          text-decoration: none;
         }
       }
     }
@@ -287,41 +311,41 @@ body {
 }
 
 .pricing {
-  padding: 6rem 0;
+  padding: 4rem 2rem;
+  height: auto;
   display: flex;
   align-items: center;
   background-color: $background;
-  height: 60vh;
   color: $secondary;
-  font-family: Junge;
 
   &-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media (max-width: $xl) {
-      align-items: center;
-    }
+    padding: 3rem 0rem;
   }
 
   &__title {
     font-size: 2.5rem;
     margin-bottom: .5rem;
+    font-family: Junge;
   }
 
   &__description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 2rem;
+    line-height: 1.5;
+    font-family: Jost;
   }
 
   &-list {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
 
-    @media (max-width: $xl) {
-      flex-direction: column;
+    @media (min-width: $lg) {
+      flex-direction: row;
     }
 
     &__item {
@@ -331,10 +355,12 @@ body {
       border-radius: 5px;
       padding: 1.5rem;
       font-size: .9rem;
+      font-family: Jost;
 
       .price {
         font-size: 2.5rem;
         margin-bottom: .5rem;
+        font-family: Junge;
         
         small {
           font-size: 1rem;
@@ -345,6 +371,7 @@ body {
         color: $primary;
         font-size: 1.5rem;
         margin-bottom: .25rem;
+        font-family: Junge;
       }
 
       .description {
@@ -357,20 +384,31 @@ body {
     margin-top: 2rem;
     line-height: 1.5;
     text-align: center;
+    font-family: Jost;
   }
 }
 
 .contact {
   background-color: $primary;
-  font-family: Junge;
-  padding: 2rem 0;
+  padding: 2rem;
   color: #fff;
-  width: 100%;
+  width: auto;
+  font-family: Jost;
+
+  @media (min-width: $lg) {
+    background-color: $background;
+  }
 
   &-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: $lg) {
+      padding: 2rem;
+      background-color: $primary;
+      border-radius: 15px;
+    }
   }
 
   @media (max-width: $xl) {
@@ -381,6 +419,7 @@ body {
   &__title {
     font-size: 2rem;
     margin-bottom: .5rem;
+    font-family: Junge;
   }
 
   &__description {
@@ -391,13 +430,12 @@ body {
 
   &-list {
     display: flex;
-    margin: auto;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
-    @media (max-width: $xl) {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+    @media (min-width: $lg) {
+      flex-direction: row;
     }
 
     &__item {
@@ -439,8 +477,6 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 5rem 2rem;
-
-    // width: 100%;
 
     @media (max-width: $xl) {
       align-items: center;
@@ -519,42 +555,33 @@ body {
 }
 
 .reviews {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  padding: 6rem 0;
+  height: auto;
+  width: auto;
+  padding: 4rem 2rem;
   background-color: $background;
   color: $secondary;
-  font-family: Junge;
+  font-family: Jost;
 
-  &-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    @media (max-width: $xl) {
-      align-items: center;
-      text-align: center;
-    }
-  }
-  
   &-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    padding: 3rem 0;
 
-    @media (max-width: $xl) {
-      align-items: center;
+    @media (min-width: $lg) {
+      width: 100%;
     }
   }
 
   &__title {
     font-size: 2.5rem;
     margin-bottom: .5rem;
+    font-family: Junge;
   }
 
   &__description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 2rem;
   }

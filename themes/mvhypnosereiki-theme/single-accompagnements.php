@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-  <section class="hero">
+  <section class="hero post-hero">
     <div class="hero-container container">
       <div class="column">
         <h1 class="hero__title"><?= get_the_title(); ?></h1>

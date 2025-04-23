@@ -3,11 +3,12 @@
 .footer {
   display: flex;
   background-color: $primary;
-  font-family: Junge;
+  font-family: Jost;
 
   &-container {
     display: flex;
     flex-direction: column;
+    
     width: 100%;
     max-width: $xl;
     margin: auto;
@@ -26,11 +27,13 @@
       &-title {
         font-size: 2rem;
         margin-bottom: 1rem;
+        font-family: Junge;
       }
 
       &-subtitle {
         font-size: 1.5rem;
         margin-bottom: 1rem;
+        font-family: Junge;
       }
 
       &-paragraph {
@@ -41,9 +44,6 @@
         align-items: center;
       }
     }
-
-    
-    
 
     .more-infos {
       display: flex;
@@ -75,15 +75,17 @@
 
   &-content {
     display: flex;
-    justify-content: space-between;
-    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
     margin-bottom: 2rem;
 
-    @media (max-width: $xl) {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 2rem;
+    @media (min-width: $lg) {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      justify-content: space-between;
     }
   }
 

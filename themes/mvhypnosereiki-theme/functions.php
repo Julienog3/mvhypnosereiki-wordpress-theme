@@ -44,6 +44,26 @@ function register_post_types()
       'menu_icon' => 'dashicons-megaphone',
    );
 
+   $servicesLabels = array(
+      'name' => 'Services',
+      'all_items' => 'Tous les services',
+      'singular_name' => 'Service',
+      'add_new_item' => 'Ajouter un service',
+      'edit_item' => 'Modifier le service',
+      'menu_name' => 'Services'
+   );
+
+   $servicesArgs = array(
+      'labels' => $servicesLabels,
+      'public' => true,
+      'show_in_rest' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'custom-fields'),
+      'menu_position' => 7,
+      'menu_icon' => 'dashicons-store',
+   );
+
+   register_post_type('services', $servicesArgs);
    register_post_type('accompagnements', $supportsArgs);
    register_post_type('actualites', $newsArgs);
 }
