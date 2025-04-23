@@ -48,13 +48,13 @@
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-list__item">
-          <a href="#about">A mon propos</a>
+          <a href="#a-propos">A mon propos</a>
         </li>
         <li class="nav-list__item">
-          <a href="#support">Accompagnements</a>
+          <a href="#accompagnements">Accompagnements</a>
         </li>
         <li class="nav-list__item">
-          <a href="#pricing">Tarifs</a>
+          <a href="#tarifs">Tarifs</a>
         </li>
         <li class="nav-list__item">
           <a href="#avis">Avis</a>
