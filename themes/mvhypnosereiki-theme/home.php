@@ -92,11 +92,10 @@ get_header();
     <p class="pricing__description">Du lundi au samedi matin<br /> 9h-19h, uniquement sur rendez-vous</p>
     <ul class="pricing-list">
       <li class="pricing-list__item">
-        <span class="price">60€/<small>séance</small></span>
+        <span class="price">70€/<small>séance</small></span>
         <h3 class="title">Hypnose holistique</h3>
         <p class="description">
-          Une séance d'une durée d'environ 1h à 1h30<br />
-          Tarif réduit pour les étudiants et les demandeurs d'emploi : 50€
+          Une séance d'une durée d'environ 1h30 à 2h<br />
         </p>
       </li>
       <li class="pricing-list__item">

@@ -50,6 +50,11 @@
       </ul>
       <ul class="links">
         <li class="link">
+          <a href="/mediation">
+            Médiation
+          </a>
+        </li>
+        <li class="link">
           <a href="/mentions-legales">
             Mentions légales
           </a>
