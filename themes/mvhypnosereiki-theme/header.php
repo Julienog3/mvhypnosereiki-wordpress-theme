@@ -48,16 +48,16 @@
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-list__item">
-          <a href="#a-propos">A mon propos</a>
+          <a href="<?= get_site_url() ?>/#a-propos">A mon propos</a>
         </li>
         <li class="nav-list__item">
-          <a href="#accompagnements">Accompagnements</a>
+          <a href="<?= get_site_url() ?>/#accompagnements">Accompagnements</a>
         </li>
         <li class="nav-list__item">
-          <a href="#tarifs">Tarifs</a>
+          <a href="<?= get_site_url() ?>/#tarifs">Tarifs</a>
         </li>
         <li class="nav-list__item">
-          <a href="#avis">Avis</a>
+          <a href="<?= get_site_url() ?>/#avis">Avis</a>
         </li>
       </ul>
     </nav>
