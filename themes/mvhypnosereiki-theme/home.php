@@ -94,6 +94,9 @@ get_header();
       <?php
         $args = array(
           'post_type' => 'services',
+          'orderby' => 'meta_value_num',
+          'metakey' => 'order',
+          'order' => 'ASC'
         );
 
         $services_query = new WP_Query($args);

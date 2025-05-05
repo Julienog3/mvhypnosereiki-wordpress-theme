@@ -58,7 +58,7 @@ function register_post_types()
       'public' => true,
       'show_in_rest' => true,
       'has_archive' => true,
-      'supports' => array('title', 'custom-fields'),
+      'supports' => array('title', 'editor', 'custom-fields'),
       'menu_position' => 7,
       'menu_icon' => 'dashicons-store',
    );
