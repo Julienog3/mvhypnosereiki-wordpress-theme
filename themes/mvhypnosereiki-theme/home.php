@@ -62,20 +62,20 @@ get_header();
       $supports_query = new WP_Query($args);
       ?>
       <?php if ($supports_query->have_posts()) : while ($supports_query->have_posts()) : $supports_query->the_post(); ?>
-          <li class="support-list__item">
-            <article class="article">
-              <div class="column">
-                <h3 class="article__title"><?php the_title() ?></h3>
-                <p class="article__description">
-                  <?= get_the_excerpt() ?>
-                </p>
-                <a class="btn" href="<?php the_permalink() ?>" aria-label="Naviguer vers la page sur <?php the_title() ?>">
-                  En savoir plus
-                </a>
-              </div>
-              <?php the_post_thumbnail('large', array('class' => 'picture')) ?>
-            </article>
-          </li>
+        <li class="support-list__item">
+          <article class="article">
+            <div class="column">
+              <h3 class="article__title"><?php the_title() ?></h3>
+              <p class="article__description">
+                <?= get_the_excerpt() ?>
+              </p>
+              <a class="btn" href="<?php the_permalink() ?>" aria-label="Naviguer vers la page sur <?php the_title() ?>">
+                En savoir plus
+              </a>
+            </div>
+            <?php the_post_thumbnail('large', array('class' => 'picture')) ?>
+          </article>
+        </li>
       <?php
         endwhile;
       endif;
@@ -91,22 +91,24 @@ get_header();
     <h2 class="pricing__title">Mes tarifs</h2>
     <p class="pricing__description">Du lundi au samedi matin<br /> 9h-19h, uniquement sur rendez-vous</p>
     <ul class="pricing-list">
-      <li class="pricing-list__item">
-        <span class="price">70€/<small>séance</small></span>
-        <h3 class="title">Hypnose holistique</h3>
-        <p class="description">
-          Une séance d'une durée d'environ 1h30 à 2h<br />
-        </p>
-      </li>
-      <li class="pricing-list__item">
-        <span class="price">60€/<small>séance</small></span>
-        <h3 class="title">Reiki</h3>
-        <p class="description">
-          Une séance d'une durée d'environ 1h à 1h30<br />
-          Tarif réduit pour les étudiants et les demandeurs d'emploi : 50€<br />
-          Pour les demandes spécifiques de reiki, veuillez me contacter
-        </p>
-      </li>
+      <?php
+        $args = array(
+          'post_type' => 'services',
+        );
+
+        $services_query = new WP_Query($args);
+      ?>
+      <?php if ($services_query->have_posts()) : while ($services_query->have_posts()) : $services_query->the_post(); ?>
+        <li class="pricing-list__item">
+          <span class="price"><?= get_field('price') ?>€/<small>séance</small></span>
+          <h3 class="title"><?= get_field('support')->post_title ?></h3>
+          <p class="description"><?= get_field('description') ?></p>
+        </li>
+      <?php
+        endwhile;
+      endif;
+      ?>
+      <?php wp_reset_postdata(); ?>
     </ul>
     <p class="pricing-infos">Possibilité de déplacement à domicile et/ou travail à distance,<br />pour davantage de précisions, merci de me contacter</p>
   </div>
